@@ -6,7 +6,7 @@ import Bars from '../../images/bars.svg';
 
 import './style.scss';
 
-export const Navbar = () => {
+export const Navbar = ({ toggle }) => {
   return (
     <div className="nav">
       <div className="nav__wrap">
@@ -16,6 +16,7 @@ export const Navbar = () => {
         <div
           className="nav__menu-bars"
           style={{ backgroundImage: `url(${Bars})` }}
+          onClick={toggle}
         ></div>
         <div className="nav__menu">
           {menuData.map((elem, index) => (

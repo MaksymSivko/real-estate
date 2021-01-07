@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './style.scss';
 
-export const Button = ({ link, title }) => {
-  const big = true;
-  const primary = true;
-
+export const Button = ({ link, title, big = true, primary = true }) => {
   const backgroundColor = primary ? '#000d1a' : '#CD853F';
   const color = primary ? '#fff' : '#000d1a';
   const fontSize = big ? '14px' : '20px';
